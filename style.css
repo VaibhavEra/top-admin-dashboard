@@ -70,9 +70,8 @@ h6 {
 /* CSS reset ends here */
 
 @font-face {
-  font-family: haikyuu;
-  src: url(assests/assests/font/font2.woff2) format(woff2),
-    url(assests/assests/font/font1.woff) format(woff1);
+  font-family: "haikyuu";
+  src: url(assests/assests/font/dimitri.ttf);
 }
 
 * {
@@ -82,19 +81,103 @@ h6 {
 body {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 1.5fr 5fr;
+  grid-template-columns: 1.2fr 4fr 1.2fr;
+  grid-template-rows: 1fr 5fr;
+  background-color: #dfdddb;
 }
 
+/* HEADER */
 #header {
-  background-color: rebeccapurple;
+  background-color: #ef863d;
   grid-column: 2 / 4;
-  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 120px;
 }
+
+.pfp {
+  border-radius: 50%;
+}
+
+.first-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.search-box {
+  margin-left: 56px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+}
+
+input {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 800px;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #f3f0ee;
+  color: #35364a;
+}
+
+input:focus,
+input:hover {
+  box-shadow: 5px 5px 10px #3c3f4c;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 40px 80px 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.second-row {
+  margin-left: 66px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+#username {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: start;
+  gap: 26px;
+}
+
+.main-pfp {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.second-row-div {
+  align-self: center;
+}
+
+#buttons {
+  align-self: center;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  gap: 24px;
+}
+button {
+  color: #f3f0ee;
+  background-color: #35364a;
+  border: none;
+  border-radius: 24px;
+  width: 6em;
+  padding: 6px;
+}
+/* HEADER */
 
 /* SIDEBAR */
 #sidebar {
-  background-color: #ef863d;
+  background-color: #35364a;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 }
@@ -141,14 +224,121 @@ h1 {
 }
 /* SIDEBAR */
 
+/* CONTENT */
 #content-area1 {
-  background-color: burlywood;
+  background-color: #dfdddb;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  margin: 18px 32px;
 }
 
+.card {
+  border: 3px solid #f49030;
+  border-radius: 12px;
+  box-shadow: 1px 1px 8px grey;
+  background-color: #f3f0ee;
+  padding: 40px 16px 24px 36px;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.small-icons img {
+  height: 28px;
+}
+
+.small-icons {
+  margin-top: 24px;
+  margin-right: 24px;
+  display: flex;
+  gap: 32px;
+  justify-content: flex-end;
+}
+
+.aoba:hover {
+  background-image: linear-gradient(
+    to right top,
+    #a5f9f1,
+    #9aece6,
+    #8fdfdc,
+    #84d3d1,
+    #79c6c6
+  );
+  color: white;
+  border: 3px solid #343434;
+}
+
+.date:hover {
+  background-image: linear-gradient(
+    to right,
+    #2b6055,
+    #518276,
+    #78a69a,
+    #9fcbbf,
+    #c8f2e5
+  );
+  color: white;
+  border: 3px solid #63968b;
+}
+
+.shira:hover {
+  background-image: linear-gradient(
+    to right,
+    #ac87a0,
+    #ad7399,
+    #ad5d91,
+    #ad4489,
+    #ac217f
+  );
+  color: white;
+  border: 3px solid #5c575a;
+}
+
+.inarizaki:hover {
+  background-image: linear-gradient(
+    to right,
+    #565049,
+    #4c4542,
+    #403b3b,
+    #333133,
+    #282828
+  );
+  color: #fff4e8;
+}
+
+.nekoma:hover {
+  background-image: linear-gradient(
+    to right,
+    #9b3333,
+    #ac3434,
+    #bc3435,
+    #cd3535,
+    #de3535
+  );
+  color: #361d1d;
+  border: 3px solid #f7f4ee;
+}
+/* CONTENT */
+
 #content-area2 {
-  background-color: green;
+  background-color: #3c3f4c;
+  color: #f3f0ee;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
+  padding: 18px 32px;
 }
+
+#announcements {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* .trending {
+  background-color: #dfdddb;
+} */
