@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="header">
+    <header id="header">
       <div class="first-row">
         <input type="text" placeholder="Clik here to Search" />
         <h2>Hinata Shoyo</h2>
@@ -23,10 +23,56 @@
           <button>Share</button>
         </div>
       </div>
-    </div>
+    </header>
     <div id="sidebar">
-      <h1>Dashboard</h1>
       <div class="nav1">
+        <img
+          src="./assests/assests/SVG/volleyball.svg"
+          alt="Volleyball"
+          id="volleyball"
+        />
+        <h1>Dashboard</h1>
+      </div>
+      <div class="nav">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+          "
+        >
+          <img
+            src="assests/assests/SVG/home.svg"
+            alt="Home"
+            class="nav-icons"
+          />
+          <img
+            src="assests/assests/SVG/profile.svg"
+            alt="Profile"
+            class="nav-icons"
+          />
+          <img
+            src="assests/assests/SVG/message.svg"
+            alt="Messages"
+            class="nav-icons"
+          />
+          <img
+            src="assests/assests/SVG/history.svg"
+            alt="History"
+            class="nav-icons"
+          />
+          <img
+            src="assests/assests/SVG/tasks.svg"
+            alt="Tasks"
+            class="nav-icons"
+          />
+          <img
+            src="assests/assests/SVG/communities.svg"
+            alt="Communities"
+            class="nav-icons"
+          />
+        </div>
         <ul>
           <li>Home</li>
           <li>Profile</li>
@@ -35,8 +81,28 @@
           <li>Tasks</li>
           <li>Communities</li>
         </ul>
-      </div>
-      <div class="nav2">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+          "
+        >
+          <img
+            src="assests/assests/SVG/settings.svg"
+            alt="Settings"
+            class="nav-icons"
+          /><img
+            src="assests/assests/SVG/support.svg"
+            alt="Support"
+            class="nav-icons"
+          /><img
+            src="assests/assests/SVG/privacy.svg"
+            alt="Privacy"
+            class="nav-icons"
+          />
+        </div>
         <ul>
           <li>Settings</li>
           <li>Support</li>
@@ -46,85 +112,136 @@
     </div>
     <div id="content-area1">
       <h2>Notable Matches</h2>
-      <div class="card">
-        <div class="content">
-          <h3>Karasuno vs Date Tech</h3>
-          <p>
-            Karasuno vs Date Tech was a match that took place during the 2nd
-            round of the 2012 Miyagi Interhigh Prelims. The match ended in
-            Karasuno's victory in straight sets.
-            <strong>(2:0 / 25-19, 25-22)</strong>
-          </p>
+      <div id="cards">
+        <div class="card">
+          <div class="content">
+            <h3>Karasuno vs Date Tech</h3>
+            <p>
+              Karasuno vs Date Tech was a match that took place during the 2nd
+              round of the 2012 Miyagi Interhigh Prelims. The match ended in
+              Karasuno's victory in straight sets.
+              <strong>(2:0 / 25-19, 25-22)</strong>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h3>Karasuno vs Aoba Johsai</h3>
-          <p>
-            Karasuno vs Aoba Johsai was a match between the two teams during the
-            third round of Miyagi Interhigh Prelims. The match ended in Aoba
-            Johsai's victory after an endless 3rd set.
-            <strong>(1:2 / 15-25, 25-23, 31-33)</strong>
-          </p>
+        <div class="card">
+          <div class="content">
+            <h3>Karasuno vs Aoba Johsai</h3>
+            <p>
+              Karasuno vs Aoba Johsai was a match between the two teams during
+              the third round of Miyagi Interhigh Prelims. The match ended in
+              Aoba Johsai's victory after an endless 3rd set.
+              <strong>(1:2 / 15-25, 25-23, 31-33)</strong>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h3>Karasuno vs Aoba Johsai (Spring High)</h3>
-          <p>
-            Karasuno vs Aoba Johsai was a match during the Miyagi Spring
-            Qualifier semifinals. It was a revenge match for Karasuno's previous
-            loss during the Interhigh Preliminaries. After a tough and close
-            brawl, Karasuno won and advanced to the finals.
-            <strong>(2:1 / 25-23, 26-28, 26-24)</strong>
-          </p>
+        <div class="card">
+          <div class="content">
+            <h3>Karasuno vs Aoba Johsai (Spring High)</h3>
+            <p>
+              Karasuno vs Aoba Johsai was a match during the Miyagi Spring
+              Qualifier semifinals. It was a revenge match for Karasuno's
+              previous loss during the Interhigh Preliminaries. After a tough
+              and close brawl, Karasuno won and advanced to the finals.
+              <strong>(2:1 / 25-23, 26-28, 26-24)</strong>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h3>Karasuno vs Shiratorizawa</h3>
-          <p>
-            Karasuno vs Shiratorizawa was the final match of the Miyagi
-            Prefectural Spring Qualifiers. The match was the first 5-set match
-            for Karasuno and also in the entire series. After many tough brawls
-            and a temporary setback in the final set, Karasuno was able to push
-            through and win the match 3:2. With their victory, Karasuno
-            qualified as Miyagi's representative for the Spring High National
-            Tournament.
-            <strong>(3:2 / 16-25, 31-29, 18-25, 29-27, 21-19)</strong>
-          </p>
+        <div class="card">
+          <div class="content">
+            <h3>Karasuno vs Shiratorizawa</h3>
+            <p>
+              Karasuno vs Shiratorizawa was the final match of the Miyagi
+              Prefectural Spring Qualifiers. The match was the first 5-set match
+              for Karasuno and also in the entire series. After many tough
+              brawls and a temporary setback in the final set, Karasuno was able
+              to push through and win the match 3:2. With their victory,
+              Karasuno qualified as Miyagi's representative for the Spring High
+              National Tournament.
+              <strong>(3:2 / 16-25, 31-29, 18-25, 29-27, 21-19)</strong>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h3>Karasuno vs Inarizaki [Hyōgo]</h3>
-          <p>
-            In the second round of Spring Nationals, Karasuno faces Inarizaki in
-            a fierce battle. Despite the Miya twins' brilliance, Karasuno's
-            teamwork, Hinata's growth, and Tanaka's redemption lead to a
-            nail-biting third-set victory, cementing their rise among the best.
-            <strong>(2:1 / 27-25, 16-25, 32-30)</strong>
-          </p>
+        <div class="card">
+          <div class="content">
+            <h3>Karasuno vs Inarizaki [Hyōgo]</h3>
+            <p>
+              In the second round of Spring Nationals, Karasuno faces Inarizaki
+              in a fierce battle. Despite the Miya twins' brilliance, Karasuno's
+              teamwork, Hinata's growth, and Tanaka's redemption lead to a
+              nail-biting third-set victory, cementing their rise among the
+              best.
+              <strong>(2:1 / 27-25, 16-25, 32-30)</strong>
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h3>Karasuno vs Nekoma [Tokyo]</h3>
-          <p>
-            Haikyuu!! The Movie: Decisive Battle at the Garbage Dump focuses on
-            the highly anticipated match between Karasuno and Nekoma during the
-            National Volleyball Tournament. The two teams, long-time rivals,
-            face off in a thrilling battle to prove who is the superior team.
-            The match is filled with intense rallies, showcasing each team's
-            unique strengths, especially Karasuno's speed and Nekoma's defense.
-            Both teams push their limits, with Karasuno's players, particularly
-            Hinata and Kageyama, continuing to grow as they face Nekoma's strong
-            defense.
-            <strong>(2-1 / 25-27, 26-24, and 25-21)</strong>
-          </p>
+        <div class="card">
+          <div class="content">
+            <h3>Karasuno vs Nekoma [Tokyo]</h3>
+            <p>
+              Haikyuu!! The Movie: Decisive Battle at the Garbage Dump focuses
+              on the highly anticipated match between Karasuno and Nekoma during
+              the National Volleyball Tournament. The two teams, long-time
+              rivals, face off in a thrilling battle to prove who is the
+              superior team. The match is filled with intense rallies,
+              showcasing each team's unique strengths, especially Karasuno's
+              speed and Nekoma's defense. Both teams push their limits, with
+              Karasuno's players, particularly Hinata and Kageyama, continuing
+              to grow as they face Nekoma's strong defense.
+              <strong>(2-1 / 25-27, 26-24, and 25-21)</strong>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div id="content-area2">Other 2 Containers</div>
+    <div id="content-area2">
+      <h2>Announcements</h2>
+      <div id="announcements">
+        <div class="announcement">
+          <h4>Site Maintanance</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat,
+            odio? Nobis labore soluta distinctio! Minima ipsa rerum alias eaque
+            sequi.
+          </p>
+        </div>
+        <hr />
+        <div class="announcement">
+          <h4>Community Share Day</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            ad saepe magnam nulla hic delectus est eveniet? Neque, corporis
+            quasi?
+          </p>
+        </div>
+        <hr />
+        <div class="announcement">
+          <h4>Updated Privacy Policy</h4>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis fuga
+            dolor, laboriosam architecto suscipit dicta similique doloremque
+            inventore enim id.
+          </p>
+        </div>
+        <hr />
+      </div>
+      <h2>Trending</h2>
+      <div class="trends">
+        <p>@KingofKings</p>
+        <p>Oikawa Toru</p>
+      </div>
+      <div class="trends">
+        <p>@HinataBoke</p>
+        <p>Kageyama Tobio</p>
+      </div>
+      <div class="trends">
+        <p>@AceNo.1</p>
+        <p>Kōtarō Bokuto</p>
+      </div>
+      <div class="trends">
+        <p>@ActualAceNo.1</p>
+        <p>Wakatoshi Ushijima</p>
+      </div>
+    </div>
   </body>
 </html>
